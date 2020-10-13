@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="description" content="Developer Portfolio">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Mazharul Islam">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio</title>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<link rel="stylesheet" type="text/css" href="/css/mobile.css">
+
+</head>
+<body>
+	<nav>
+		<div>
+			<a href="###">
+				<img src="/img/hamburger.svg">
+			</a>
+		</div>
+		<ul>
+			<li>
+				<a href="https://facebook.com/emonn46" target="_blank">
+				<img src="/img/facebook.png">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/im_azharul/" target="_blank">
+					<img src="/img/instagram.png">
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/emon_mazharul" target="_blank">
+					<img src="/img/twitter.png">
+				</a>
+			</li>
+			<li>
+				<a href="mailto:dev.mazharul@gmail.com">
+					<img src="/img/email.png">
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- end of navbar -->
+<div class="container">
+	<section class="first-view">
+		<div class="content_part">
+			<h1 class="main_header">
+				Hey, I am Mazharul.
+				 A fullstack developer form Bangladesh.
+			</h1>
+			<div class="btn_group">
+				<a href="#contact" class="btn_one">
+					Say Hi!
+				</a>
+				<a href="https://github.com/emonmazharul/" target="_blank" class="btn_two">
+					Github
+					<img src="img/github_btn.png" alt="github">
+				</a>
+			</div>
+		</div>
+		<div class="img_part">
+			<div class="img_border">
+			</div>
+		</div>
+	</section>
+	<!-- end of section one -->
+	<section class="about">
+		<h1>About</h1>
+		<div>
+			<p>
+				I am a remote fullstack developer from Sylhet,Banngladesh.I am passionate about my work and always try to give my all for client satisfication.I try to  follow industry standard and always put best practice. I hve experienced in HTML,CSS,Javascript,React,Redux,Node , express and similliar othres minor technology.
+				For Database I use mongodb . I user firebase as serverless .
+				I try to create simple yet meaningful thing for people.My goal is make the internet better with good web app and for that I always try my best.So If you want to hire me for your project then knock me on my email.
+			</p>
+		</div>
+	</section>
+	<section class="skills">
+		<h1>Skills</h1>
+		<div class="parent_box">
+			<div style="margin-right: 2%;" class="box">
+				<h3 >Development</h3>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Javascript</li>
+					<li>React</li>
+					<li>Redux</li>
+					<li>Bootstrap</li>
+					<li>Node</li>
+					<li>Express JS</li>
+					<li>MongoDB</li>
+					<li>Firebase</li>
+					<li>Socket IO</li>
+					<li>Webpack</li>
+				</ul>
+			</div>
+			<div style="margin-right: 2%;" class="box">
+				<div>
+					<h3>Design</h3>
+					<ul>
+						<li>Figma</li>
+					</ul>
+				</div>
+				<div style="margin-top: 2 0px;">
+					<h3>Collaboration tools</h3>
+					<ul>
+						<li>Github</li>
+						<li>Git</li>
+					</ul>
+				</div>
+				<div  style="margin-top: 20px;">
+					<h3>Deployment</h3>
+					<ul>
+						<li>Heroku</li>
+						<li>Netlify</li>
+						<li>Vercel</li>
+					</ul>
+				</div>
+			</div>
+			<div class="box">
+				<h3>Quality</h3>
+				<ul>
+					<li>Responsive design</li>
+					<li>browser compatibility</li>
+					<li>CORS platform feture </li>
+					<li>Clean Code</li>
+					<li>Industry best practice</li>
+					<li>Use of latest tech</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="swiper-container mobile_skills">
+		<h1>Skills</h1>
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+      	<!-- <img src="img/chatapp.png"> -->
+      	<div class="box">
+					<h3 >Development</h3>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Javascript</li>
+						<li>React</li>
+						<li>Redux</li>
+						<li>Bootstrap</li>
+						<li>Node</li>
+						<li>Express JS</li>
+						<li>MongoDB</li>
+						<li>Firebase</li>
+						<li>Socket IO</li>
+						<li>Webpack</li>
+					</ul>
+				</div>
+      </div>
+      <div class="swiper-slide">
+      	<!-- <img src="img/covidapi.png"> -->
+      	<div class="box">
+					<div>
+						<h3>Design</h3>
+						<ul>
+							<li>Figma</li>
+						</ul>
+					</div>
+					<div style="margin-top: 2 0px;">
+						<h3>Collaboration tools</h3>
+						<ul>
+							<li>Github</li>
+							<li>Git</li>
+						</ul>
+					</div>
+					<div  style="margin-top: 20px;">
+						<h3>Deployment</h3>
+						<ul>
+							<li>Heroku</li>
+							<li>Netlify</li>
+							<li>Vercel</li>
+						</ul>
+					</div>
+				</div>
+      </div>
+      <div class="swiper-slide">
+      	<div class="box">
+					<h3>Quality</h3>
+					<ul>
+						<li>Responsive design</li>
+						<li>browser compatibility</li>
+						<li>CORS platform feture </li>
+						<li>Clean Code</li>
+						<li>Industry best practice</li>
+						<li>Use of latest tech</li>
+					</ul>
+				</div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+	</section>
+	<!-- end of mobile skills section -->
+	<section class="swiper-container mobile_projects">
+		<h1>Projects</h1>
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+      	<div  class="box">
+					<img src="/img/tracker.png">
+					<div class="sub_box">
+						<h5>COVID-19 TRACKER</h5>
+					</div>
+					<p>
+						It is a COVID-19 tracker app.It is build with React,React Context api.With the
+						app you check the covid status of whole world. 
+					</p>
+					<div class="icon_box" style="margin-left: 12px;">
+						<a href="https://portfolio-covid19-tracker.netlify.app/" target="_blank">Visit site</a>
+						<a href="https://github.com/emonmazharul/COVID-19-tracker" target="_blank">
+							<img src="/img/github_link.png" alt="github link"/>
+						</a>
+					</div>
+				</div>
+      </div>
+      <div class="swiper-slide">
+      	<div class="box">
+					<img src="/img/gallery.png">
+					<div class="sub_box">
+						<h5>Fullstack gallery app</h5>
+					</div>
+					<p>
+						It is a fullstack gallery app build with React,Redux and Firebase at backend. you can sign up using google and then able to upload image.However you can see any picture without any account. 
+					</p>
+					<div class="icon_box" style="margin-left: 12px;">
+						<a href="https://portfolio-galleryapp.netlify.app/" target="_blank">Visit site</a>
+						<a href="https://github.com/emonmazharul/React-Redux-Gallery-App-" target="_blank">
+							<img src="/img/github_link.png" alt="github link"/>
+						</a>
+					</div>
+				</div>
+      </div>
+      <div class="swiper-slide">
+    		<div class="box">
+					<img src="/img/placeholder_card.png">
+					<div class="sub_box">
+						<h5>Sales Manager app</h5>
+					</div>
+					<p>
+						A mern stack app with which you can save monthly sale of your any buisness or shop.It then save data and show total
+						income.The app view your monthly sales with visual chart so you can see up and downs. 
+					</p>
+					<div class="icon_box" style="margin-left: 12px;">
+						<a href="https://portfolio-sales-manager.herokuapp.com/" target="_blank">Visit site</a>
+						<a href="https://github.com/emonmazharul/mern-sales-manager" target="_blank">
+							<img src="/img/github_link.png" alt="github link"/>
+						</a>
+					</div>
+				</div>
+      </div>
+      <div class="swiper-slide">
+	      <div class="box">
+					<img src="/img/pool.png">
+					<div  class="sub_box">
+						<h5>Online pool creator</h5>
+					</div>
+					<p>
+						This online pool creator help you create a online poll.You can create pool on any context.It will track user email and ip so that one can’t vote twice.After end of a pool  admin will send the result to the pool creator email.However it is a MERN stack app
+					</p>
+					<div class="icon_box" style="margin-left: 12px;">
+						<a href="https://pool-creator.herokuapp.com/" target="_blank">Visit site</a>
+						<a href="https://github.com/emonmazharul/mern-pool-creator" target="_blank">
+							<img src="/img/github_link.png" alt="github link"/>
+						</a>
+					</div>
+				</div>
+      </div>
+      <div class="swiper-slide">
+      	<div class="box">
+					<img src="/img/chatapp.png">
+					<div class="sub_box">
+						<h5>Realtime chat app</h5>
+					</div>
+					<p>
+						I create this chat app using node and socket io. These two are very populer and lightweight for realtime chat app or any kind of realtime interaction.In this chat app you simply join a room and able to chat with your friend.
+					</p>
+					<div class="icon_box" style="margin-left: 12px;">
+						<a href="https://emon-chat-app.herokuapp.com" target="_blank">Visit site</a>
+						<a href="https://github.com/emonmazharul/emon-chat-app" target="_blank">
+							<img src="/img/github_link.png" alt="github link"/>
+						</a>
+					</div>
+				</div>
+      </div>
+      <div class="swiper-slide">
+      	<div class="box">
+					<img src="/img/rest1.jpg">
+					<div class="sub_box">
+						<h5>Task manager api</h5>
+					</div>
+					<p>
+						Task Manager api ! may be it is look like a very beginner rest api.But it is not. from using jwt to mongo casacading stylesheet include all best practice.Yes the concept is simple but architect is combination of all best and modern techs.
+					</p>
+					<div class="icon_box" style="margin-left: 12px;">
+						<a href="https://emon-task-manager.herokuapp.com/users/me" target="_blank">Visit site</a>
+						<a href="https://github.com/emonmazharul/task-manager-api" target="_blank">
+							<img src="/img/github_link.png" alt="github link"/>
+						</a>
+					</div>
+				</div>
+      </div>
+      <div class="swiper-slide">
+      	<div class="box">
+					<img src="/img/covidapi.png">
+					<div class="sub_box">
+						<h5>COVID-19 API</h5>
+					</div>
+					<p>
+						At the very begining of novel corona virus I create this api for building front end app from using the api.I use cherio
+						for scraping and fastify for routing. It is a nice api and you get lastest update of covid-19 from two different source. 
+					</p>
+					<div class="icon_box" style="margin-left: 12px;">
+						<a href="https://emon-covid19.herokuapp.com/" target="_blank">Visit site</a>
+						<a href="https://github.com/emonmazharul/covid19-api" target="_blank">
+							<img src="/img/github_link.png" alt="github link"/>
+						</a>
+					</div>
+				</div>
+      </div>
+      <div class="swiper-slide">
+      	<div class="box">
+					<img src="/img/rest2.jpg">
+					<div class="sub_box">
+						<h5>Others API</h5>
+					</div>
+					<p>
+						These are the backend code of my mern apps.if you want to see the backend code or the api behind the front end you can see it following the links below.
+						I try to use best tech and put all best practice to make these apis fast,smooth and robust.
+					</p>
+					<div class="icon_box" style="margin-left: 12px;">
+						<a href="https://github.com/emonmazharul" target="_blank">Visit site</a>
+						<a href="https://github.com/emonmazharul/" target="_blank">
+							<img src="/img/github_link.png" alt="github link"/>
+						</a>
+					</div>
+				</div>
+	      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+	</section>
+	<!-- end of mobile projects -->
+	<section class="projects">
+		<h1>Projects</h1>
+		<div class="parent_box">
+			<div style="margin-right: 2%;" class="box">
+				<img src="/img/tracker.png">
+				<div class="sub_box">
+					<h5>COVID-19 TRACKER</h5>
+				</div>
+				<p>
+					It is a COVID-19 tracker app.It is build with React,React Context api.With the
+					app you check the covid status of whole world. 
+				</p>
+				<div class="icon_box" style="margin-left: 12px;">
+					<a href="https://portfolio-covid19-tracker.netlify.app/" target="_blank">Visit site</a>
+					<a href="https://github.com/emonmazharul/COVID-19-tracker" target="_blank">
+						<img src="/img/github_link.png" alt="github link"/>
+					</a>
+				</div>
+			</div>
+			<div style="margin-right: 2%;" class="box">
+				<img src="/img/gallery.png">
+				<div class="sub_box">
+					<h5>Fullstack gallery app</h5>
+				</div>
+				<p>
+					It is a fullstack gallery app build with React,Redux and Firebase at backend. you can sign up using google and then able to upload image.However you can see any picture without any account. 
+				</p>
+				<div class="icon_box" style="margin-left: 12px;">
+					<a href="https://portfolio-galleryapp.netlify.app/" target="_blank">Visit site</a>
+					<a href="https://github.com/emonmazharul/React-Redux-Gallery-App-" target="_blank">
+						<img src="/img/github_link.png" alt="github link"/>
+					</a>
+				</div>
+			</div>
+			<div class="box">
+				<img src="/img/placeholder_card.png">
+				<div class="sub_box">
+					<h5>Sales Manager app</h5>
+				</div>
+				<p>
+					A mern stack app with which you can save monthly sale of your any buisness or shop.It then save data and show total
+					income.The app view your monthly sales with visual chart so you can see up and downs. 
+				</p>
+				<div class="icon_box" style="margin-left: 12px;">
+					<a href="https://portfolio-sales-manager.herokuapp.com/" target="_blank">Visit site</a>
+					<a href="https://github.com/emonmazharul/mern-sales-manager" target="_blank">
+						<img src="/img/github_link.png" alt="github link"/>
+					</a>
+				</div>
+			</div>
+			<div  style="margin-right: 2%;margin-top: 38px;" class="box">
+				<img src="/img/pool.png">
+				<div  class="sub_box">
+					<h5>Online pool creator</h5>
+				</div>
+				<p>
+					This online pool creator help you create a online poll.You can create pool on any context.It will track user email and ip so that one can’t vote twice.After end of a pool  admin will send the result to the pool creator email.However it is a MERN stack app
+				</p>
+				<div class="icon_box" style="margin-left: 12px;">
+					<a href="https://pool-creator.herokuapp.com/" target="_blank">Visit site</a>
+					<a href="https://github.com/emonmazharul/mern-pool-creator" target="_blank">
+						<img src="/img/github_link.png" alt="github link"/>
+					</a>
+				</div>
+			</div>
+			<div style="margin-right: 2%;margin-top: 38px;" class="box">
+				<img src="/img/chatapp.png">
+				<div class="sub_box">
+					<h5>Realtime chat app</h5>
+				</div>
+				<p>
+					I create this chat app using node and socket io. These two are very populer and lightweight for realtime chat app or any kind of realtime interaction.In this chat app you simply join a room and able to chat with your friend.
+				</p>
+				<div class="icon_box" style="margin-left: 12px;">
+					<a href="https://emon-chat-app.herokuapp.com" target="_blank">Visit site</a>
+					<a href="https://github.com/emonmazharul/emon-chat-app" target="_blank">
+						<img src="/img/github_link.png" alt="github link"/>
+					</a>
+				</div>
+			</div>
+			<div style="margin-top: 38px;" class="box">
+				<img src="/img/rest1.jpg">
+				<div class="sub_box">
+					<h5>Task manager api</h5>
+				</div>
+				<p>
+					Task Manager api ! may be it is look like a very beginner rest api.But it is not. from using jwt to mongo casacading stylesheet include all best practice.Yes the concept is simple but architect is combination of all best and modern techs.
+				</p>
+				<div class="icon_box" style="margin-left: 12px;">
+					<a href="https://emon-task-manager.herokuapp.com/users/me" target="_blank">Visit site</a>
+					<a href="https://github.com/emonmazharul/task-manager-api" target="_blank">
+						<img src="/img/github_link.png" alt="github link"/>
+					</a>
+				</div>
+			</div>
+			<div style="margin-right: 2%;margin-top: 38px;" class="box">
+				<img src="/img/covidapi.png">
+				<div class="sub_box">
+					<h5>COVID-19 API</h5>
+				</div>
+				<p>
+					At the very begining of novel corona virus I create this api for building front end app from using the api.I use cherio
+					for scraping and fastify for routing. It is a nice api and you get lastest update of covid-19 from two different source. 
+				</p>
+				<div class="icon_box" style="margin-left: 12px;">
+					<a href="https://emon-covid19.herokuapp.com/" target="_blank">Visit site</a>
+					<a href="https://github.com/emonmazharul/covid19-api" target="_blank">
+						<img src="/img/github_link.png" alt="github link"/>
+					</a>
+				</div>
+			</div>
+			<div style="margin-top: 38px;" class="box">
+				<img src="/img/rest2.jpg">
+				<div class="sub_box">
+					<h5>Others API</h5>
+				</div>
+				<p>
+					These are the backend code of my mern apps.if you want to see the backend code or the api behind the front end you can see it following the links below.
+					I try to use best tech and put all best practice to make these apis fast,smooth and robust.
+				</p>
+				<div class="icon_box" style="margin-left: 12px;">
+					<a href="https://github.com/emonmazharul" target="_blank">Visit site</a>
+					<a href="https://github.com/emonmazharul/" target="_blank">
+						<img src="/img/github_link.png" alt="github link"/>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end of section projects -->
+	<section class="contact" id="contact">
+		<h1>Contact</h1>
+		<div>
+			<form>
+				<label for="name">Your Name</label>
+				<br>
+				<input placeholder="Your name" type="text" name="name" required>
+				<br>
+				<label  for="email">Your email</label>
+				<br>
+				<input placeholder="Your email" type="email" name="email" required>
+				<br>
+				<label for="message">Your Message</label>
+				<br>
+				<textarea placeholder="Your message " name="message">
+			</textarea>
+			<div class="info info_error" id="info_error">
+				<img src="/img/error.svg">
+				<span>Can't send your email.Please try again</span>
+			</div>
+			<div class="info info_success" id="info_success">
+				<img src="/img/success.svg">
+				<span>Email has sent successfully</span>
+			</div>
+			<br>
+			<button type="submit"  id="submit_button" >
+				Send email
+			</button>
+			</form>
+		</div>
+	</section>
+	<footer>
+		<p>
+			©️ All right reserved to 
+			<a href="https://facebook.com/emonn46" target="_blank">Mazharul islam</a>
+			 2020
+		</p>
+	</footer>
+</div>
+<script type="text/javascript" src="/js/index.js"></script>
+<script type="text/javascript" src="/js/slide.js"></script>
+
+</body>
+</html>
