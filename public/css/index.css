@@ -169,7 +169,7 @@ nav ul a {
 	max-width: 100%;
 	height: 516px;
 	margin: 0 auto;
-	background: url(../img/emon.jpg);
+	background: url(/background);
 	background-size: cover;
 	background-position: center;
 	border-radius: 50%;

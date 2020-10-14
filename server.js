@@ -1,6 +1,7 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const path = require('path');
+const fs = require('fs');
 const {google} = require('googleapis');
 
 
@@ -35,6 +36,11 @@ const transport  = nodemailer.createTransport({
 
 })
 
+const stream = fs.createReadStream('./public/img/emon.jpg');
+
+app.get('/background', (req,res) => {
+	stream.pipe(res);
+})
 
 app.post('/sendmail', (req,res) => {
 	const {sender_name,sender_email,message} = req.body;
