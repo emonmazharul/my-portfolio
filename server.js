@@ -5,7 +5,7 @@ const {google} = require('googleapis');
 
 
 const app = express();
-const publicPath = path.join(__dirname,'public');
+const publicPath = path.resolve(__dirname,'public');
 console.log(publicPath)
 // const indexPath = path.join(__dirname,'/public','/index.html');
 
