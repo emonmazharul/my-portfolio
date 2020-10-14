@@ -10,7 +10,7 @@ console.log(publicPath)
 // const indexPath = path.join(__dirname,'/public','/index.html');
 
 const port = process.env.PORT || 5000;
-app.use(express.static(publicPath))
+// app.use(express.static(publicPath))
 app.use(express.json());
 app.use(express.urlencoded({extended:false}))
 
@@ -37,9 +37,9 @@ const transport  = nodemailer.createTransport({
 
 })
 
-// app.get('/', (req,res) => {
-// 	res.sendFile(indexPath)
-// })
+app.get('/', (req,res) => {
+	res.send('hellow')
+})
 
 app.post('/sendmail', (req,res) => {
 	const {sender_name,sender_email,message} = req.body;
