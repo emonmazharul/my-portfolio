@@ -155,7 +155,7 @@ nav ul a {
 .btn_group .btn_two img {
 	width: 30px;
 	height:30px;
-	transform: translateY(10px);
+	transform: translate(5px,10px);
 }
 /*//#E5CFCF*/
 .img_part{
