@@ -39,7 +39,17 @@ const transport  = nodemailer.createTransport({
 app.get('/background', (req,res) => {
 	try {
 		res.set({'Content-Type':'image/jpg'})
-		const stream = fs.createReadStream('./public/img/emon.jpg');
+		const stream = fs.createReadStream('./public/img/background.jpg');
+		stream.pipe(res);
+	} catch(e) {
+		console.log(e);
+	}
+})
+
+app.get('/mobilebackground', (req,res) => {
+	try {
+		res.set({'Content-Type':'image/jpg'})
+		const stream = fs.createReadStream('./public/img/background-mobile.jpg');
 		stream.pipe(res);
 	} catch(e) {
 		console.log(e);
