@@ -35,9 +35,6 @@ const transport  = nodemailer.createTransport({
 
 })
 
-// app.get('/', (req,res) => {
-// 	res.send('')
-// })
 
 app.post('/sendmail', (req,res) => {
 	const {sender_name,sender_email,message} = req.body;
