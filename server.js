@@ -36,10 +36,14 @@ const transport  = nodemailer.createTransport({
 
 })
 
-const stream = fs.createReadStream('./public/img/emon.jpg');
-
 app.get('/background', (req,res) => {
-	stream.pipe(res);
+	try {
+		res.set({'Content-Type':'image/jpg'})
+		const stream = fs.createReadStream('./public/img/emon.jpg');
+		stream.pipe(res);
+	} catch(e) {
+		console.log(e);
+	}
 })
 
 app.post('/sendmail', (req,res) => {
