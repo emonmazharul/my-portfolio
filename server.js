@@ -5,8 +5,9 @@ const {google} = require('googleapis');
 
 
 const app = express();
-const publicPath = path.join(__dirname,'/public');
-const indexPath = path.join(__dirname,'/public','/index.html');
+const publicPath = path.join(__dirname,'public');
+console.log(publicPath)
+// const indexPath = path.join(__dirname,'/public','/index.html');
 
 const port = process.env.PORT || 5000;
 app.use(express.static(publicPath))
@@ -36,9 +37,9 @@ const transport  = nodemailer.createTransport({
 
 })
 
-app.get('/', (req,res) => {
-	res.sendFile(indexPath)
-})
+// app.get('/', (req,res) => {
+// 	res.sendFile(indexPath)
+// })
 
 app.post('/sendmail', (req,res) => {
 	const {sender_name,sender_email,message} = req.body;
