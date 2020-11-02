@@ -7,6 +7,31 @@
 	box-sizing: border-box;
 }
 
+.job_thread {
+	width: 215px;
+	height: 58px;
+	background-color: #256EFF; 
+	position: fixed;
+	top: 75px;
+	right: 0;
+	z-index: 1;
+	/*transform: rotate(-90deg);*/
+}
+.close_btn {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+}
+.close_btn button{
+	/*background: none;*/
+	padding: .3em;
+}
+
+.job_para {
+	font-size: 1em;
+	line-height: 58px;
+	margin-left: 1em;
+}
 .mobile_skills,.mobile_projects{
 	display: none;
 }
@@ -14,26 +39,27 @@ body {
 	background: #46237A;
 	width: 100%;
 	scroll-behavior: smooth;
+	font-size: 20px;
 }
 
 h1{
 	font-family: 'Open Sans', sans-serif;
 	color: #FF495C;
-	font-size: 50px;
+	font-size: 2.5em;
 	font-weight: lighter;
 	text-align: center;
 }
 h3 {
 	color:#FFFFFF;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 25px;
-	margin-left: 15px;
-	margin-top: 15px;	
+	font-size: 1.25em;
+	margin-top: 0.75em;
+	margin-left: 0.75em;
 }
 
 h5 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 0.8em;
 	font-weight: bold;
 	text-align: center;
 	line-height: 58px;
@@ -42,29 +68,28 @@ h5 {
 
 p {
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 20px;
+	font-size: 1em;
 	font-weight: lighter;
 	color: #FFFFFF;
-	/*white-space: nowrap;*/
-	/*word-wrap: break-word;*/
 	word-break: keep-all;
 }
 
 .box ul{
 	font-family: 'Open Sans Condensed', sans-serif;
-	list-style-type: none;
-	margin-left: 20px;
-	margin-top: 5px;
+	margin-top: .25em;
+	margin-left: 2.5em;
+	font-size: 1em;
 	color: #DCD0D0;
-	font-size: 20px;
-	font-weight:bold;
 }
 
 a,button{
 	color: #FFFFFF;
-	padding: 15px 30px;
+	padding-top: 0.75em;
+	padding-bottom: 0.75em;
+	padding-right: 1.5em;
+	padding-left: 1.5em;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 0.8em;
 	text-decoration: none;
 	border:none;
 	border-radius: 50px;
@@ -89,10 +114,10 @@ button:disabled{
 
 .box {
 	width: 32%;
-	height: 390px;
+	height: 400px;
 	background: #593987;
 	border-radius: 15px;
-	transition: 0.3 ease-in-out;
+	transition: 0.3s ease-in-out;
 } 
 
 .box:hover{
@@ -120,7 +145,7 @@ nav ul {
 
 nav ul li {
 	display: inline;
-	margin-right: 15px;	
+	margin-right: .75em;	
 }
 
 nav ul a {
@@ -128,9 +153,8 @@ nav ul a {
 }
 
 .first-view {
-	/*height: 100vh;*/
 	display: flex;
-	margin-bottom: 30px;
+	margin-bottom: 1.5em;
 }
 .content_part {
 	width: 50%;
@@ -140,28 +164,27 @@ nav ul a {
 	color: #FBFBFB;
 	font-family: 'Playfair Display SC', serif;
 	text-align: left;
-	font-size: 40px;
+	font-size: 2em;
 	font-weight: bold;
 	line-height: 128%;
-	margin-bottom: 50px;
+	margin-bottom: 1.5em;
 }
 
 .btn_group a {
 	background: #407BF0;	
 }
 .btn_group .btn_two {
-	margin-left: 16px;
+	margin-left: .8em;
 }
 .btn_group .btn_two img {
 	width: 30px;
 	height:30px;
 	transform: translate(5px,10px);
 }
-/*//#E5CFCF*/
 .img_part{
 	width: 50%;
 	height: 516px;
-	margin-top: 66px;
+	margin-top: 3.3em;
 }
 
 .img_part div {
@@ -176,25 +199,28 @@ nav ul a {
 }
 
 .about,.projects,.contact{
-	margin-top:50px
+	margin-top: 2.5em;
 }
 
 .about div {
 	background-color: #593987;
-	margin-top: 30px;
+	margin-top: .8em;
 	border-radius: 15px;
 }
 
 .about div p {
-	padding : 50px 60px;
-	font-size: 30px;
+	font-size: 1.5em;
+	padding-top: 1.5em;
+	padding-right: 2em;
+	padding-bottom: 1.5em;
+	padding-left: 2em;
 }
 
 .skills{
-	margin-top:30px;
+	margin-top: 1.5em;
 }
 .parent_box {
-	margin-top: 30px;
+	margin-top: 1.5em;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -202,10 +228,16 @@ nav ul a {
 .projects .parent_box .box {
 	position: relative;
 	height: 555px;
-	border-top-left-radius:0;
-	border-top-right-radius: 0;
+	border-radius: 0;
 }
- .box>img {
+
+.project_box_one,.project_box_two,.project_box_four,.project_box_five,.project_box_seven{
+		margin-right: 2%;
+}
+.project_box_four,.project_box_five,.project_box_six,.project_box_seven,.project_box_eight{
+	margin-top: 38px;
+}
+.box>img {
 	display: block;
 	width:100%;
 	height: 216px;
@@ -217,14 +249,17 @@ nav ul a {
 }
 
 .box p {
-	padding: 15px 12px;
+	padding-top: .75em;
+	padding-bottom: .75em;
+	padding-right: .6em;
+	padding-left: .6em; 
 }
 
 .box a {
 	color: #3DDC97;
 	padding: 0;
-	margin-right: 10px;
-	font-size:20px;
+	margin-right: .5em;
+	font-size: .8em;
 }
 
 .box .icon_box{
@@ -237,10 +272,10 @@ nav ul a {
 }
 
 .contact {
-	margin-top:50px;
+	margin-top: 2.5em;
 }
 .contact div {
-	margin-top: 30px;
+	margin-top: 1.5em;
 }
 form {
 	font-family: 'Open Sans', sans-serif;
@@ -248,7 +283,7 @@ form {
 
 form label {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 0.8em;
 	color: #FFFFFF;
 
 }
@@ -258,9 +293,13 @@ form input {
 	color: #FFFFFF;
 	background: #593987;
 	border:none;
-	padding: 10px 15px;
-	margin: 15px 0;
-	font-size: 16px;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-right: .75em;
+	padding-left: .75em;
+	margin-top: .75em; 
+	margin-bottom: .75em;
+	font-size: 0.8em;
 	font-weight: lighter;
 	border: 1px solid #6F6565;
 }
@@ -271,18 +310,21 @@ form textarea {
 	height: 200px;
 	color: #FFFFFF;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
+	font-size: 0.8em;
 	font-weight: lighter;
-	padding: 10px 15px;
+	padding-top: .5em;
+	padding-bottom:.5em;
+	padding-right:  .75em;
+	padding-left: .75em;
+	margin-top: .75em;
+	margin-bottom: .75em;
 	border: 1px solid #6F6565;
-	margin: 15px 0;
-
 }
 
 form .info {
 	width: 55%;
 	height: 50px;
-	padding-left: 10px; 
+	padding-left: .5em;
 	display:flex;
 	align-items: center;
 	margin: 0;
@@ -300,23 +342,25 @@ form #info_error{
 
 form .info img {
 	display:block;
-	margin-right: 10px;
+	margin-right: .5em;
 }
 
 form .info span {
 	display:block;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 0.8em;
 	color: #FFFFFF;
 }
 
 form button {
 	background: #407BF0;
 }
-
+form button:disabled{
+	opacity: 0.6;
+}
 footer {
-	margin-top: 80px;
-	margin-bottom: 20px
+	margin-top: 4em;
+	margin-bottom: 1em;
 }
 
 footer p {
@@ -328,3 +372,262 @@ footer p a {
 	color: #FF6575;
 	padding: 0;
 }
+
+/*for desktop screen*/
+@media all and (min-width: 1350px) {
+
+	.content_part {
+    margin-top: 241px;
+	}
+	.content_part .main_header {
+		font-size: 2.30em;
+  }
+  .content_part a {
+		padding: 1em 1.7em;
+  }
+  .img_part{
+		width: 50%;
+		height: 575px;
+	}
+
+	.img_part div {
+		width: 575px;
+		max-width: 100%;
+		height: 575px;
+	}
+	.box {
+		width: 23%;
+	}
+	.project_box_four{
+		margin-top: 0;
+	}
+	.project_box_one,.project_box_two,.project_box_three,.project_box_five,.project_box_six,.project_box_seven{
+		margin-right: 2%;
+	}
+	.project_box_five,.project_box_six,.project_box_seven,.project_box_eight{
+		margin-top: 38px;
+	}
+	form button {
+		padding: 1em 1.7em;
+	}
+}
+
+/*for mobile screen*/
+
+@media all and (max-width: 514px) {
+	body {
+		font-size: 16px;
+	}
+	.job_thread {
+		top: 45px;
+		z-index: 1000;
+	}
+	p {
+		font-size: 1em;
+		font-weight: lighter;
+		color: #FFFFFF;
+	}
+	h1{
+		font-family: 'Open Sans', sans-serif;
+		color: #FF495C;
+		font-size: 1.56em;
+		font-weight: lighter;
+		text-align: center;
+	}
+	h3 {
+		font-size: 1em;
+		margin-top: 1em;
+		margin-right: 1.5em;
+		margin-bottom: .4em;
+		margin-left: 1.5em;
+	}
+	h5 {
+		font-size: 0.9em;
+		line-height: 40px;
+	}
+	a,button {
+		color: #FFFFFF;
+		padding-top: .7em;
+		padding-right: 1.56em;
+		padding-bottom: .7em;
+		padding-left: 1.56em;
+		font-size: 14px;
+		text-decoration: none;
+		border:none;
+	}		
+	.container{
+		margin:0;
+	}
+	nav {
+		height: 45px;
+	}
+	nav div {
+		display: block;
+		position: relative;
+		padding-top: .75em;
+		padding-bottom: .75em;
+		padding-right : .93em;
+		padding-left: .93em;
+		z-index: 1;
+	}
+	nav div a {
+		padding: 0;
+	}
+	nav ul {
+		display: none;
+	}
+
+	nav ul li{
+		display: block;
+		margin-right:  0;
+	}
+	.mobile_nav {
+		display: block;
+		background: #FF495C;
+		width: 100%;
+		top: 45px;
+		left: 0;
+		transform: none;
+		z-index: 1;
+	}
+	nav ul li{
+		display: block;
+		padding-top: .62em;
+		padding-bottom: .62em;
+		text-align: center;
+		border-top: 1px solid #46237A;
+	}
+	.first-view {
+		flex-wrap: wrap;
+		margin:0;
+	}
+	.content_part{
+		order: 2;
+		width: 100%;
+		margin-top: 1em;
+	}
+	.content_part .main_header {
+		color: #FBFBFB;
+		font-family: 'Playfair Display SC', serif;
+		text-align: center;
+		font-size: 1.25em;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+	.btn_group{
+		text-align: center;
+	}
+	.btn_group .btn_two img {
+		width:  22px;
+		height: 22px;
+		transform: translate(5px,6px);
+	}
+	.img_part{
+		order: 1;
+		width: 100%;
+		height: 300px;
+		background: url(/mobilebackground);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin:0;
+		border-radius: 0;
+	}
+	.img_border {
+		display: none;
+	}
+	.about{
+		margin-top: 2.5em;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.about div {
+		background-color: #593987;
+		margin-top: 1.25em;
+		border-radius: 20px;
+	}
+	.about div p {
+		font-size: 1.25em;
+		padding-top: 1.56em;
+		padding-right: 1.25em;
+		padding-bottom: 1.56em;
+		padding-left: 1.25em;
+	}
+	.skills,.projects{
+		display:none;
+	}
+	.mobile_skills,.mobile_projects{
+		display: block;
+		margin-top: 1.87em;
+	}
+	.box {
+		position: relative;
+		width: 80%;
+		height: 325px;
+	}
+	.box ul{
+		font-size: 1em;
+		margin-left: 3em;
+	}
+	.mobile_skills {
+	    width: 100%;
+	    height: 420px;
+	}
+	.mobile_projects{
+		width: 100%;
+		height: 525px;
+	}
+	.mobile_projects .box {
+		position: relative;
+		height: 430px;
+		border-radius: 0;
+	}
+	.mobile_projects .sub_box {
+		height: 40px;
+	} 
+	.box .icon_box a {
+		font-size: .9em;
+	}
+	.box a img {
+		width: 22px;
+		height: 22px;
+		transform: translateY(6px);
+	}
+	.swiper-slide{
+		width: 100%;
+		display:flex;
+		justify-content: center;
+		margin-top: 1.25em;
+	} 
+	.contact{
+		margin-top: 1.87em;
+	}
+	.contact div {
+		width: 80%;
+		margin-top: 1.25em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	form label {
+		font-size: 1em;
+	}
+	form input {
+		width: 100%;
+		font-size: .87em;
+	}
+	form .info {
+		width: 100%;
+		margin:0;
+	}
+	form .info span {
+		font-size: .87em;
+		padding-right: 3px;
+	}
+	form textarea{
+		width: 100%;
+		height: 150px;
+		font-size: .87em;
+	}
+}
+

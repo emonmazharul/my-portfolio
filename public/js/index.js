@@ -3,6 +3,17 @@ const form = document.querySelector('form');
 const submit_button = document.querySelector('#submit_button');
 const info_success = document.querySelector('#info_success');
 const info_error = document.querySelector('#info_error');
+const close_button = document.querySelector('#close_btn');
+
+
+let mySwiper = new Swiper('.swiper-container', {
+	pagination: {
+		el:'.swiper-pagination',
+	},
+	autoplay: {
+		delay:4000,
+	},
+})
 
 hamburgerBtn.addEventListener('click', (e) => {
 	e.preventDefault();
@@ -29,4 +40,9 @@ form.addEventListener('submit', (e) => {
 			console.log(e);
 			submit_button.disabled = false;
 		})
+})
+
+close_btn.addEventListener('click', () => {
+	const job_thread = document.querySelector('.job_thread');
+	job_thread.style.display = 'none';
 })

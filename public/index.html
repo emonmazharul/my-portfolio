@@ -10,11 +10,24 @@
 	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="/css/index.css">
-	<link rel="stylesheet" type="text/css" href="/css/mobile.css">
+	<link rel="icon" type="image/svg" href="/img/icon.svg">
+	<link rel="stylesheet" type="text/css" href="/css/index.min.css">
+	<link rel="stylesheet" media="screen and (min-width: 701px) and (max-width: 900px)" type="text/css" href="/css/tab.css">
+
 
 </head>
 <body>
+	<!-- asking for job section -->
+	<div class="job_thread">
+		<p class="job_para">
+			I need a job &#x1F61F; 
+		</p>
+		<div class="close_btn">
+			<button id="close_btn">
+				&#x274C; 
+			</button>
+		</div>
+	</div>
 	<nav>
 		<div>
 			<a href="###">
@@ -134,6 +147,140 @@
 			</div>
 		</div>
 	</section>
+	<!-- end of desktop skills section -->
+	<!-- desktop project section begin -->
+	<section class="projects">
+		<h1>Projects</h1>
+		<div class="parent_box">
+			<div  class="box project_box_one">
+				<img src="/img/tracker.png">
+				<div class="sub_box">
+					<h5>COVID-19 TRACKER</h5>
+				</div>
+				<p>
+					It is a COVID-19 tracker app.It is build with React,React Context api.With the
+					app you check the covid status of whole world. 
+				</p>
+				<div class="icon_box" style="margin-left: 12px;">
+					<a href="https://portfolio-covid19-tracker.netlify.app/" target="_blank">Visit site</a>
+					<a href="https://github.com/emonmazharul/COVID-19-tracker" target="_blank">
+						<img src="/img/github_link.png" alt="github link"/>
+					</a>
+				</div>
+			</div>
+			<div class="box project_box_two">
+				<img src="/img/gallery.png">
+				<div class="sub_box">
+					<h5>Fullstack gallery app</h5>
+				</div>
+				<p>
+					It is a fullstack gallery app build with React,Redux and Firebase at backend. you can sign up using google and then able to upload image.However you can see any picture without any account. 
+				</p>
+				<div class="icon_box" style="margin-left: 12px;">
+					<a href="https://portfolio-galleryapp.netlify.app/" target="_blank">Visit site</a>
+					<a href="https://github.com/emonmazharul/React-Redux-Gallery-App-" target="_blank">
+						<img src="/img/github_link.png" alt="github link"/>
+					</a>
+				</div>
+			</div>
+			<div class="box project_box_three">
+				<img src="/img/placeholder_card.png">
+				<div class="sub_box">
+					<h5>Sales Manager app</h5>
+				</div>
+				<p>
+					A mern stack app with which you can save monthly sale of your any buisness or shop.It then save data and show total
+					income.The app view your monthly sales with visual chart so you can see up and downs. 
+				</p>
+				<div class="icon_box" style="margin-left: 12px;">
+					<a href="https://portfolio-sales-manager.herokuapp.com/" target="_blank">Visit site</a>
+					<a href="https://github.com/emonmazharul/mern-sales-manager" target="_blank">
+						<img src="/img/github_link.png" alt="github link"/>
+					</a>
+				</div>
+			</div>
+			<div class="box project_box_four">
+				<img src="/img/pool.png">
+				<div  class="sub_box">
+					<h5>Online pool creator</h5>
+				</div>
+				<p>
+					This online pool creator help you create a online poll.You can create pool on any context.It will track user email and ip so that one can’t vote twice.After end of a pool  admin will send the result to the pool creator email.However it is a MERN stack app
+				</p>
+				<div class="icon_box" style="margin-left: 12px;">
+					<a href="https://pool-creator.herokuapp.com/" target="_blank">Visit site</a>
+					<a href="https://github.com/emonmazharul/mern-pool-creator" target="_blank">
+						<img src="/img/github_link.png" alt="github link"/>
+					</a>
+				</div>
+			</div>
+			<div class="box project_box_five">
+				<img src="/img/chatapp.png">
+				<div class="sub_box">
+					<h5>Realtime chat app</h5>
+				</div>
+				<p>
+					I create this chat app using node and socket io. These two are very populer and lightweight for realtime chat app or any kind of realtime interaction.In this chat app you simply join a room and able to chat with your friend.
+				</p>
+				<div class="icon_box" style="margin-left: 12px;">
+					<a href="https://emon-chat-app.herokuapp.com" target="_blank">Visit site</a>
+					<a href="https://github.com/emonmazharul/emon-chat-app" target="_blank">
+						<img src="/img/github_link.png" alt="github link"/>
+					</a>
+				</div>
+			</div>
+			<div  class="box project_box_six">
+				<img src="/img/rest1.jpg">
+				<div class="sub_box">
+					<h5>Task manager api</h5>
+				</div>
+				<p>
+					Task Manager api ! may be it is look like a very beginner rest api.But it is not. from using jwt to mongo casacading stylesheet include all best practice.Yes the concept is simple but architect is combination of all best and modern techs.
+				</p>
+				<div class="icon_box" style="margin-left: 12px;">
+					<a href="https://emon-task-manager.herokuapp.com/users/me" target="_blank">Visit site</a>
+					<a href="https://github.com/emonmazharul/task-manager-api" target="_blank">
+						<img src="/img/github_link.png" alt="github link"/>
+					</a>
+				</div>
+			</div>
+			<div class="box project_box_seven">
+				<img src="/img/covidapi.png">
+				<div class="sub_box">
+					<h5>COVID-19 API</h5>
+				</div>
+				<p>
+					At the very begining of novel corona virus I create this api for building front end app from using the api.I use cherio
+					for scraping and fastify for routing. It is a nice api and you get lastest update of covid-19 from two different source. 
+				</p>
+				<div class="icon_box" style="margin-left: 12px;">
+					<a href="https://emon-covid19.herokuapp.com/" target="_blank">Visit site</a>
+					<a href="https://github.com/emonmazharul/covid19-api" target="_blank">
+						<img src="/img/github_link.png" alt="github link"/>
+					</a>
+				</div>
+			</div>
+			<div class="box project_box_eight">
+				<img src="/img/rest2.jpg">
+				<div class="sub_box">
+					<h5>Others API</h5>
+				</div>
+				<p>
+					These are the backend code of my mern apps.if you want to see the backend code or the api behind the front end you can see it following the links below.
+					I try to use best tech and put all best practice to make these apis fast,smooth and robust.
+				</p>
+				<div class="icon_box" style="margin-left: 12px;">
+					<a href="https://github.com/emonmazharul" target="_blank">Visit site</a>
+					<a href="https://github.com/emonmazharul/" target="_blank">
+						<img src="/img/github_link.png" alt="github link"/>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end of mobile project section -->
+
+	<!-- mobile skills section begin -->
 	<section class="swiper-container mobile_skills">
 		<h1>Skills</h1>
     <!-- Additional required wrapper -->
@@ -203,6 +350,8 @@
     <div class="swiper-pagination"></div>
 	</section>
 	<!-- end of mobile skills section -->
+
+	<!-- start of mobile projects section -->
 	<section class="swiper-container mobile_projects">
 		<h1>Projects</h1>
     <!-- Additional required wrapper -->
@@ -353,135 +502,7 @@
     <div class="swiper-pagination"></div>
 	</section>
 	<!-- end of mobile projects -->
-	<section class="projects">
-		<h1>Projects</h1>
-		<div class="parent_box">
-			<div style="margin-right: 2%;" class="box">
-				<img src="/img/tracker.png">
-				<div class="sub_box">
-					<h5>COVID-19 TRACKER</h5>
-				</div>
-				<p>
-					It is a COVID-19 tracker app.It is build with React,React Context api.With the
-					app you check the covid status of whole world. 
-				</p>
-				<div class="icon_box" style="margin-left: 12px;">
-					<a href="https://portfolio-covid19-tracker.netlify.app/" target="_blank">Visit site</a>
-					<a href="https://github.com/emonmazharul/COVID-19-tracker" target="_blank">
-						<img src="/img/github_link.png" alt="github link"/>
-					</a>
-				</div>
-			</div>
-			<div style="margin-right: 2%;" class="box">
-				<img src="/img/gallery.png">
-				<div class="sub_box">
-					<h5>Fullstack gallery app</h5>
-				</div>
-				<p>
-					It is a fullstack gallery app build with React,Redux and Firebase at backend. you can sign up using google and then able to upload image.However you can see any picture without any account. 
-				</p>
-				<div class="icon_box" style="margin-left: 12px;">
-					<a href="https://portfolio-galleryapp.netlify.app/" target="_blank">Visit site</a>
-					<a href="https://github.com/emonmazharul/React-Redux-Gallery-App-" target="_blank">
-						<img src="/img/github_link.png" alt="github link"/>
-					</a>
-				</div>
-			</div>
-			<div class="box">
-				<img src="/img/placeholder_card.png">
-				<div class="sub_box">
-					<h5>Sales Manager app</h5>
-				</div>
-				<p>
-					A mern stack app with which you can save monthly sale of your any buisness or shop.It then save data and show total
-					income.The app view your monthly sales with visual chart so you can see up and downs. 
-				</p>
-				<div class="icon_box" style="margin-left: 12px;">
-					<a href="https://portfolio-sales-manager.herokuapp.com/" target="_blank">Visit site</a>
-					<a href="https://github.com/emonmazharul/mern-sales-manager" target="_blank">
-						<img src="/img/github_link.png" alt="github link"/>
-					</a>
-				</div>
-			</div>
-			<div  style="margin-right: 2%;margin-top: 38px;" class="box">
-				<img src="/img/pool.png">
-				<div  class="sub_box">
-					<h5>Online pool creator</h5>
-				</div>
-				<p>
-					This online pool creator help you create a online poll.You can create pool on any context.It will track user email and ip so that one can’t vote twice.After end of a pool  admin will send the result to the pool creator email.However it is a MERN stack app
-				</p>
-				<div class="icon_box" style="margin-left: 12px;">
-					<a href="https://pool-creator.herokuapp.com/" target="_blank">Visit site</a>
-					<a href="https://github.com/emonmazharul/mern-pool-creator" target="_blank">
-						<img src="/img/github_link.png" alt="github link"/>
-					</a>
-				</div>
-			</div>
-			<div style="margin-right: 2%;margin-top: 38px;" class="box">
-				<img src="/img/chatapp.png">
-				<div class="sub_box">
-					<h5>Realtime chat app</h5>
-				</div>
-				<p>
-					I create this chat app using node and socket io. These two are very populer and lightweight for realtime chat app or any kind of realtime interaction.In this chat app you simply join a room and able to chat with your friend.
-				</p>
-				<div class="icon_box" style="margin-left: 12px;">
-					<a href="https://emon-chat-app.herokuapp.com" target="_blank">Visit site</a>
-					<a href="https://github.com/emonmazharul/emon-chat-app" target="_blank">
-						<img src="/img/github_link.png" alt="github link"/>
-					</a>
-				</div>
-			</div>
-			<div style="margin-top: 38px;" class="box">
-				<img src="/img/rest1.jpg">
-				<div class="sub_box">
-					<h5>Task manager api</h5>
-				</div>
-				<p>
-					Task Manager api ! may be it is look like a very beginner rest api.But it is not. from using jwt to mongo casacading stylesheet include all best practice.Yes the concept is simple but architect is combination of all best and modern techs.
-				</p>
-				<div class="icon_box" style="margin-left: 12px;">
-					<a href="https://emon-task-manager.herokuapp.com/users/me" target="_blank">Visit site</a>
-					<a href="https://github.com/emonmazharul/task-manager-api" target="_blank">
-						<img src="/img/github_link.png" alt="github link"/>
-					</a>
-				</div>
-			</div>
-			<div style="margin-right: 2%;margin-top: 38px;" class="box">
-				<img src="/img/covidapi.png">
-				<div class="sub_box">
-					<h5>COVID-19 API</h5>
-				</div>
-				<p>
-					At the very begining of novel corona virus I create this api for building front end app from using the api.I use cherio
-					for scraping and fastify for routing. It is a nice api and you get lastest update of covid-19 from two different source. 
-				</p>
-				<div class="icon_box" style="margin-left: 12px;">
-					<a href="https://emon-covid19.herokuapp.com/" target="_blank">Visit site</a>
-					<a href="https://github.com/emonmazharul/covid19-api" target="_blank">
-						<img src="/img/github_link.png" alt="github link"/>
-					</a>
-				</div>
-			</div>
-			<div style="margin-top: 38px;" class="box">
-				<img src="/img/rest2.jpg">
-				<div class="sub_box">
-					<h5>Others API</h5>
-				</div>
-				<p>
-					These are the backend code of my mern apps.if you want to see the backend code or the api behind the front end you can see it following the links below.
-					I try to use best tech and put all best practice to make these apis fast,smooth and robust.
-				</p>
-				<div class="icon_box" style="margin-left: 12px;">
-					<a href="https://github.com/emonmazharul" target="_blank">Visit site</a>
-					<a href="https://github.com/emonmazharul/" target="_blank">
-						<img src="/img/github_link.png" alt="github link"/>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
+
 	<!-- end of section projects -->
 	<section class="contact" id="contact">
 		<h1>Contact</h1>
@@ -505,7 +526,7 @@
 			</div>
 			<div class="info info_success" id="info_success">
 				<img src="/img/success.svg">
-				<span>Email has sent successfully</span>
+				<span>Email has sent successfully. I will reach you soon</span>
 			</div>
 			<br>
 			<button type="submit"  id="submit_button" >
@@ -523,7 +544,8 @@
 	</footer>
 </div>
 <script type="text/javascript" src="/js/index.js"></script>
-<script type="text/javascript" src="/js/slide.js"></script>
+<!-- <script type="text/javascript" src="/js/slide.js"></script> -->
+
 
 </body>
 </html>
