@@ -4,6 +4,7 @@ const submit_button = document.querySelector('#submit_button');
 const info_success = document.querySelector('#info_success');
 const info_error = document.querySelector('#info_error');
 const close_button = document.querySelector('#close_btn');
+const copyright = document.querySelector('footer p');
 
 
 let mySwiper = new Swiper('.swiper-container', {
@@ -46,3 +47,6 @@ close_btn.addEventListener('click', () => {
 	const job_thread = document.querySelector('.job_thread');
 	job_thread.style.display = 'none';
 })
+document.addEventListener("DOMContentLoaded" , () => {
+ 	copyright.innerHTML = `©️ All right reserved to <a href="https://facebook.com/emonn46" target="_blank">Mazharul islam</a> ${new Date().getFullYear()}`
+)}
