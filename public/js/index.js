@@ -48,5 +48,5 @@ close_btn.addEventListener('click', () => {
 	job_thread.style.display = 'none';
 })
 document.addEventListener("DOMContentLoaded" , () => {
- 	copyright.innerHTML = `©️ All right reserved to <a href="https://facebook.com/emonn46" target="_blank">Mazharul islam</a> ${new Date().getFullYear()}`
+ 	copyright.innerHTML += ` ${new Date().getFullYear()}`
 )}
