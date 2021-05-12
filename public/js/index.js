@@ -49,4 +49,4 @@ close_btn.addEventListener('click', () => {
 })
 document.addEventListener("DOMContentLoaded" , () => {
  	copyright.innerHTML += ` ${new Date().getFullYear()}`
-)}
+})
