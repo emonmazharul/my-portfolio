@@ -1,56 +1,49 @@
 import React from 'react';
-import { Mail, Linkedin, Github } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="py-16 bg-off-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl text-center">
+    <section id="contact" className="py-20 bg-[#0f0f0f]">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl text-center">
         
-        {/* Section Heading */}
-        <h2 className="text-3xl sm:text-4xl font-heading font-bold text-gray-900 mb-4 border-b-4 border-electric-teal inline-block mx-auto pb-1">
+        {/* Heading */}
+        <h2 className="text-3xl sm:text-4xl font-heading font-bold text-white mb-6 inline-block border-b-4 border-electric-teal pb-1">
           Get In Touch
         </h2>
 
-        {/* Call to Action */}
-        <p className="text-xl font-body text-gray-700 mb-10">
-          I'm currently seeking new opportunities! Feel free to reach out to discuss potential roles or exciting projects.
+        {/* Subtitle */}
+        <p className="text-lg sm:text-xl font-body text-gray-300 leading-relaxed max-w-2xl mx-auto mb-12">
+          Whether you have an exciting project in mind, want to collaborate, or are looking to hire a full-stack engineer — I'm always open to new conversations. Let’s build something impactful together.
         </p>
 
-        {/* Contact Links Grid */}
-        <div className="flex justify-center space-x-6 sm:space-x-10">
-          
-          {/* Email Link */}
-          <a
-            href="mailto:YOUR_EMAIL@example.com" // REPLACE ME
-            className="flex flex-col items-center group text-gray-700 hover:text-electric-teal transition duration-300"
-          >
-            <Mail className="w-8 h-8 sm:w-10 sm:h-10 mb-2 group-hover:scale-110" />
-            <span className="text-sm font-body font-semibold">Email</span>
-          </a>
-          
-          {/* LinkedIn Link */}
-          <a
-            href="YOUR_LINKEDIN_URL" // REPLACE ME
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col items-center group text-gray-700 hover:text-electric-teal transition duration-300"
-          >
-            <Linkedin className="w-8 h-8 sm:w-10 sm:h-10 mb-2 group-hover:scale-110" />
-            <span className="text-sm font-body font-semibold">LinkedIn</span>
-          </a>
+        {/* Contact Card */}
+        <div className="bg-[#141414] border border-[#1f1f1f] rounded-xl p-8 shadow-xl hover:shadow-electric-teal/20 transition-all duration-300">
+          <div className="flex flex-col items-center">
+            <Mail className="w-12 h-12 text-electric-teal mb-4" />
 
-          {/* GitHub Link */}
+            <p className="text-gray-300 font-body text-lg mb-4">
+              Send me an email anytime — I usually reply within a day.
+            </p>
+
+            <a
+              href="mailto:dev.mazharul@gmail.com"
+              className="text-electric-teal font-heading text-xl hover:text-teal-400 transition"
+            >
+              dev.mazharul@gmail.com
+            </a>
+          </div>
+        </div>
+
+        {/* Optional CTA button */}
+        <div className="mt-10">
           <a
-            href="YOUR_GITHUB_URL" // REPLACE ME
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col items-center group text-gray-700 hover:text-electric-teal transition duration-300"
+            href="mailto:dev.mazharul@gmail.com"
+            className="inline-flex items-center px-8 py-3 text-lg font-heading font-bold text-black bg-electric-teal rounded-lg shadow-lg hover:bg-teal-500 hover:scale-105 transition duration-300 uppercase tracking-wide"
           >
-            <Github className="w-8 h-8 sm:w-10 sm:h-10 mb-2 group-hover:scale-110" />
-            <span className="text-sm font-body font-semibold">GitHub</span>
+            Send Message
           </a>
         </div>
-        
+
       </div>
     </section>
   );

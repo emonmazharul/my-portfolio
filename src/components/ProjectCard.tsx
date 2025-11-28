@@ -1,82 +1,74 @@
-import React from 'react';
-import type { Project } from '../data/projects';
-import { Github, Globe } from 'lucide-react';
+import React from "react";
+import { Github, ExternalLink } from "lucide-react";
+import type { Project } from "../data/projects";
 
-interface ProjectCardProps {
+interface Props {
   project: Project;
-  // Optional prop to alternate the image/text layout for visual interest
-  isFlipped?: boolean; 
+  isFlipped: boolean;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project, isFlipped = false }) => {
-  
-  // Define the Tailwind class order for the grid based on the 'isFlipped' prop
-  const contentOrder = isFlipped ? 'order-2 md:order-1' : 'order-2 md:order-2';
-  const imageOrder = isFlipped ? 'order-1 md:order-2' : 'order-1 md:order-1';
-
+const ProjectCard: React.FC<Props> = ({ project, isFlipped }) => {
   return (
-    <article className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100">
-      <div className="md:grid md:grid-cols-2">
-        
-        {/* 1. Project Image */}
-        <div className={`p-4 ${imageOrder}`}>
-          <img
-            src={project.image}
-            alt={`Screenshot of ${project.title}`}
-            className="w-full h-auto rounded-lg shadow-lg object-cover border border-gray-200 transition-transform duration-500 hover:scale-[1.02]"
-          />
+    <div
+      className={`flex flex-col lg:flex-row items-center gap-10 ${
+        isFlipped ? "lg:flex-row-reverse" : ""
+      }`}
+    >
+      {/* Image */}
+      <div className="w-full lg:w-1/2">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="rounded-xl shadow-lg border border-neutral-700 hover:shadow-teal-500/20 transition-all duration-300"
+        />
+      </div>
+
+      {/* Content */}
+      <div className="w-full lg:w-1/2 space-y-5">
+        <h3 className="text-2xl sm:text-3xl font-heading font-bold">
+          {project.title}
+        </h3>
+
+        <p className="text-neutral-300 font-body">{project.description}</p>
+
+        <ul className="list-disc list-inside text-neutral-400 font-body space-y-1">
+          {project.bullets.map((bullet, i) => (
+            <li key={i}>{bullet}</li>
+          ))}
+        </ul>
+
+        {/* Technologies */}
+        <div className="flex flex-wrap gap-2 mt-3">
+          {project.technologies.map((tech) => (
+            <span
+              key={tech}
+              className="px-3 py-1 rounded-full bg-neutral-800 border border-neutral-700 text-sm font-body text-neutral-300"
+            >
+              {tech}
+            </span>
+          ))}
         </div>
 
-        {/* 2. Project Details */}
-        <div className={`p-6 md:p-8 flex flex-col justify-center ${contentOrder}`}>
-          <h3 className="text-2xl font-heading font-bold text-gray-900 mb-3">
-            {project.title}
-          </h3>
-          
-          <p className="font-body text-gray-600 mb-4 leading-relaxed">
-            {project.description}
-          </p>
-          
-          {/* Technologies */}
-          <div className="mb-4 flex flex-wrap gap-2">
-            {project.technologies.map((tech) => (
-              <span
-                key={tech}
-                className="text-xs font-semibold px-3 py-1 rounded-full bg-electric-teal/10 text-electric-teal border border-electric-teal/50"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
+        {/* Links */}
+        <div className="flex items-center gap-4 mt-4">
+          <a
+            href={project.liveUrl}
+            target="_blank"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-500 text-neutral-900 font-heading font-semibold hover:bg-teal-400 transition"
+          >
+            Live Demo <ExternalLink size={18} />
+          </a>
 
-          {/* Links (Live URL and GitHub) */}
-          <div className="flex space-x-4 mt-2">
-            
-            {/* Live Demo Link */}
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-2 text-white bg-electric-teal px-4 py-2 rounded-lg font-heading font-semibold hover:bg-teal-500 transition duration-300 transform hover:scale-105 shadow-md"
-            >
-              <Globe className="w-4 h-4" />
-              <span>Live Demo</span>
-            </a>
-
-            {/* GitHub Link */}
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-2 text-gray-700 border border-gray-300 px-4 py-2 rounded-lg font-heading font-semibold hover:border-electric-teal hover:text-electric-teal transition duration-300"
-            >
-              <Github className="w-4 h-4" />
-              <span>Code</span>
-            </a>
-          </div>
+          <a
+            href={project.githubUrl}
+            target="_blank"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg border border-neutral-600 hover:border-teal-400 font-heading"
+          >
+            GitHub <Github size={18} />
+          </a>
         </div>
       </div>
-    </article>
+    </div>
   );
 };
 
