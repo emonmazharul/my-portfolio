@@ -1,81 +1,47 @@
-
-// import React from 'react';
-// // Assuming you have a placeholder image for your profile picture in public/profile.png
-// // You should replace this with your actual image path
-
-// const Hero: React.FC = () => {
-//   return (
-//     // Padding-top (pt-24) moves content below the fixed Navbar
-//     <section id="hero" className="min-h-screen flex items-center pt-24 pb-12 bg-off-white">
-//       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        
-//         {/* Profile Image (Circular and Centered) */}
-//         <div className="flex justify-center mb-8">
-//           <img
-//             src="/profile.png" 
-//             alt="Your Professional Profile"
-//             className="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover border-4 border-electric-teal shadow-xl transition-all duration-500 hover:scale-105"
-//           />
-//         </div>
-
-//         {/* Catchy Headline - Using the 'heading' font and Electric Teal accent */}
-//         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-heading font-bold text-gray-900 mb-4 leading-tight">
-//           Hi, I'm <span className="text-electric-teal">Your Name</span>.
-//         </h1>
-
-//         {/* Subtitle / Role Description - Using the 'body' font */}
-//         <p className="text-xl sm:text-2xl lg:text-3xl font-body text-gray-700 mb-8 max-w-3xl mx-auto">
-//           I build modern, performance-driven web applications with **React**, **TypeScript**, and **Tailwind CSS**.
-//         </p>
-
-//         {/* Call-to-Action Button */}
-//         <a 
-//           href="#projects"
-//           className="inline-block px-8 py-3 text-lg font-heading font-bold text-white bg-electric-teal rounded-lg shadow-lg hover:bg-teal-500 transform hover:scale-105 transition duration-300 ease-in-out uppercase tracking-wider"
-//         >
-//           View My Work
-//         </a>
-        
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Hero;
-
-
-// src/components/Hero.tsx
-
-// src/components/Hero.tsx
-
-import React from 'react';
-import { ArrowRight } from 'lucide-react'; 
+import React from "react";
+import { ArrowRight } from "lucide-react";
 
 const Hero: React.FC = () => {
   return (
-    // Min-height ensures the content takes up most of the viewport
-    <section id="hero" className="min-h-screen flex items-center pt-24 pb-12 bg-off-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-5xl">
-        
-        {/* === 1. Main Heading (Your Identity) === */}
-        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-heading font-extrabold text-gray-900 mb-6 leading-snug">
-          Hi, I’m a <span className="text-electric-teal">Full-Stack Software Engineer</span>.
+    <section
+      id="hero"
+      className="min-h-screen flex items-center pt-24 pb-16 bg-neutral-900 text-neutral-200"
+    >
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
+
+        {/* Main Title - smaller + tighter */}
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold leading-tight mb-5">
+          Building Reliable, Modern
+          <br />
+          <span className="text-teal-400">Full-Stack Web Applications</span>
         </h1>
 
-        {/* === 2. Core Summary (The Value Proposition) === */}
-        <p className="text-xl sm:text-2xl font-body text-gray-700 mb-10 max-w-4xl mx-auto leading-relaxed">
-          I am a Full-Stack Software Engineerspecializing in modern, high-performance web applications. My expertise spans the entire development lifecycle, from elegant front-end design using **React, TypeScript, and Tailwind CSS** to building robust, data-driven backends with **Node.js, Express, PostgreSQL, and MongoDB**. My commitment is simple: delivering clean, scalable code with a keen eye for robust, user-centric design.
+        {/* Improved Summary */}
+        <p className="text-base sm:text-lg font-body text-neutral-300 leading-relaxed mb-10">
+          I'm a full-stack software engineer focused on building clean, efficient, 
+          and scalable digital products. I work with{" "}
+          <span className="text-teal-400 font-medium">
+            React, TypeScript, and Tailwind CSS
+          </span>{" "}
+          to craft smooth, accessible front-end experiences, and use{" "}
+          <span className="text-teal-400 font-medium">
+            Node.js, Express, PostgreSQL, and MongoDB
+          </span>{" "}
+          to build solid, dependable back-end systems.  
+          I enjoy turning ideas into practical, polished solutions that users love.
         </p>
 
-        {/* === 3. Call-to-Action === */}
-        <a 
+        {/* CTA */}
+        <a
           href="#projects"
-          className="inline-flex items-center space-x-2 px-8 py-3 text-lg font-heading font-bold text-white bg-electric-teal rounded-lg shadow-lg hover:bg-teal-500 transform hover:scale-105 transition duration-300 ease-in-out uppercase tracking-wider"
+          className="inline-flex items-center gap-2 px-7 py-3 rounded-xl 
+          bg-teal-500 hover:bg-teal-400 text-neutral-900
+          text-base sm:text-lg font-heading font-semibold uppercase tracking-wide shadow-lg
+          hover:shadow-teal-500/30 transition-transform duration-300 hover:scale-105"
         >
-          <span>See My Featured Work</span>
+          <span>View My Projects</span>
           <ArrowRight className="w-5 h-5" />
         </a>
-        
       </div>
     </section>
   );
