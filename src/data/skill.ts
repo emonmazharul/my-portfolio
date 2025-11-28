@@ -3,7 +3,6 @@ import {
   SiTypescript,
   SiJavascript,
   SiReact,
-  SiNextdotjs,
   SiTailwindcss,
   SiHtml5,
   SiCss3,
