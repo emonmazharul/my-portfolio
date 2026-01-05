@@ -12,6 +12,31 @@ export interface Project {
 export const projectsData: Project[] = [
   {
     id: 1,
+    title: "Football Career Quiz",
+    description:
+      "An interactive football quiz where users guess the player based on the clubs they played for throughout their career.",
+    bullets: [
+      "Career-based quiz logic showing clubs in chronological order",
+      "Backend API built with Node.js, Express, TypeScript, and Drizzle ORM",
+      "PostgreSQL database storing players, clubs, and career history",
+      "Responsive, fast UI built with React and Tailwind CSS",
+      "Reverse-proxy setup using Nginx for production performance"
+    ],
+    image: "/who-the-baller-open-graph-image2.png",
+    technologies: [
+      "Node.js",
+      "Express",
+      "TypeScript",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "React",
+      "Tailwind CSS",
+    ],
+    liveUrl: "https://whotheballer.com",
+    githubUrl: "https://github.com/emonmazharul/whotheballer",
+  },
+  {
+    id: 2,
     title: "Modern Full-Stack Restaurant Platform",
     description:
       "A production-grade restaurant platform built with a scalable full-stack architecture, designed for real customers and deployed on a VPS environment.",
@@ -37,7 +62,7 @@ export const projectsData: Project[] = [
     githubUrl: "https://github.com/emonmazharul/restaurant-website",
   },
   {
-    id: 2,
+    id: 3,
     title: "Backward Email Viewer",
     description:
       "A secure, utility-based web application that visualizes a user's Gmail inbox from oldest to newest using Google's official APIs.",
